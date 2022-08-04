@@ -5,6 +5,7 @@ import com.biz.demo.web.entity.TUserInfo;
 import com.biz.demo.web.model.UserInfoModel;
 import com.biz.demo.web.vo.UserInfoVo;
 import com.github.pagehelper.PageInfo;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 

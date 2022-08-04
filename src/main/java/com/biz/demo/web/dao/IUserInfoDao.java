@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.biz.demo.web.entity.TUserInfo;
 import com.biz.demo.web.model.UserInfoModel;
 import com.biz.demo.web.vo.UserInfoVo;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -15,6 +17,7 @@ import java.util.List;
  * @创建人：justin
  * @创建时间：2020/10/26 16:48
  */
+@Repository
 public interface IUserInfoDao extends BaseMapper<TUserInfo> {
     /**
      * @description：分页查询

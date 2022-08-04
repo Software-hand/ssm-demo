@@ -5,6 +5,7 @@ import com.biz.demo.web.entity.base.BaseEntity;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Service;
 
 /**
  * @version V0.1
@@ -17,6 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @TableName("t_user_info")
+@Service
 public class TUserInfo extends BaseEntity {
     @ApiModelProperty(value = "用户名", required = true)
     private String userName;
