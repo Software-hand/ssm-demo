@@ -23,5 +23,35 @@
         </if>
         order by t.user_name
     </select>
+    <select id="getAllTUserInfo" resultType="com.biz.demo.web.entity.TUserInfo">
+        select * from t_user_info
+    </select>
+
+    <delete id="deleteById">
+        delete
+        from t_user_info
+        where id = #{id,jdbcType=VARCHAR}
+    </delete>
+    <update id="updateUserNameById">
+        update t_user_info
+        set user_name = #{userName,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=VARCHAR}
+    </update>
+
+
+    <insert id="insertAll">
+        insert into t_user_info
+        (user_name, real_name, password,
+         phone, email, birthday,
+         sex, lock_flag, id,
+            , , ,
+            , )
+        values (#{userName,jdbcType=VARCHAR}, #{realName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+                #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{birthday,jdbcType=VARCHAR},
+                #{sex,jdbcType=VARCHAR}, #{lockFlag,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR},
+                #{createBy,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR},
+                #{updateDate,jdbcType=TIMESTAMP}, #{delFlag})
+
+    </insert>
 
 </mapper>

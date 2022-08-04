@@ -36,4 +36,5 @@ public class TUserInfo extends BaseEntity {
     private String sex;
     @ApiModelProperty(value = "启禁用：0：启用，1：禁用")
     private String lockFlag;
+
 }
