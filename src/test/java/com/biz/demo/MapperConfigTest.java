@@ -36,7 +36,7 @@ public class MapperConfigTest {
     @Test
     public void testInsert(){
         TUserInfo tUserInfo = new TUserInfo();
-        tUserInfo.setId("3");
+        tUserInfo.setId("5");
         tUserInfo.setUserName("12312");
         tUserInfo.setRealName("zxc");
         tUserInfo.setPassword("3333333");

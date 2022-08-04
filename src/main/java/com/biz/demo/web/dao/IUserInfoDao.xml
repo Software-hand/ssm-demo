@@ -41,16 +41,8 @@
 
     <insert id="insertAll">
         insert into t_user_info
-        (user_name, real_name, password,
-         phone, email, birthday,
-         sex, lock_flag, id,
-            , , ,
-            , )
-        values (#{userName,jdbcType=VARCHAR}, #{realName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
-                #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{birthday,jdbcType=VARCHAR},
-                #{sex,jdbcType=VARCHAR}, #{lockFlag,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR},
-                #{createBy,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR},
-                #{updateDate,jdbcType=TIMESTAMP}, #{delFlag})
+        (id,user_name, real_name, password)
+        values (#{id,jdbcType=VARCHAR},#{userName,jdbcType=VARCHAR}, #{realName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})
 
     </insert>
 
