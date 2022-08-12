@@ -38,6 +38,15 @@ public class UserInfoController extends BaseController {
     @Autowired
     private IUserInfoService userInfoService;
 
+
+//    @ResponseBody // 将java对象转为json格式的数据。
+//    @RequestMapping("/hello")
+//    public String hello(){
+//        return "首页";
+//    }
+
+
+
     @ApiOperation(value = "分页查询列表", response = ResMsg.class)
     @PostMapping(value = "/queryUserInfoList")
     public ResMsg queryUserInfoList(@RequestBody UserInfoVo userInfoDto) {

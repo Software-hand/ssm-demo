@@ -22,6 +22,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @类描述：
  * @创建人：justin
  * @创建时间：2020-09-21 10:29
+ * @访问链接：http://localhost:8888/demo/doc.html
  */
 @Configuration
 @EnableSwagger2

@@ -16,10 +16,11 @@ import org.springframework.stereotype.Service;
  * @创建时间：2020/10/26 16:22
  */
 @Getter
-@Setter
-@TableName("t_user_info")
-@Service
+@Setter // 拥有相应方法
+@TableName("t_user_info") // 数据库表名
+@Service  // Spring容器管理 实体类
 public class TUserInfo extends BaseEntity {
+    // knife4j    required = true :必填
     @ApiModelProperty(value = "用户名", required = true)
     private String userName;
     @ApiModelProperty(value = "姓名", required = true)

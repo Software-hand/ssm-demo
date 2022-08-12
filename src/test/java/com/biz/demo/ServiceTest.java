@@ -33,10 +33,11 @@ public class ServiceTest {
     public void testInsert(){
         List<TUserInfo> list = new ArrayList<>();
         TUserInfo tUserInfo = new TUserInfo();
-        tUserInfo.setId("2");
+        tUserInfo.setId("3");
         tUserInfo.setUserName("rjs");
         tUserInfo.setRealName("mj");
         tUserInfo.setPassword("123456");
+        tUserInfo.setCreateBy("软件手");
 
         list.add(tUserInfo);
         iUserInfoService.saveBatch(list);
